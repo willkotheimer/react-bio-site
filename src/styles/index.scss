@@ -1,0 +1,594 @@
+@import "~bootstrap/scss/bootstrap";
+@import "~@fortawesome/fontawesome-free/css/all.min.css";
+@import url(https://fonts.googleapis.com/css?family=Anonymous+Pro);
+@import './variables';
+@font-face {
+  font-family: 'Greenscreen';
+  src: url('../fonts/Greenscr.ttf')  format('truetype'), /* Safari, Android, iOS */
+}
+
+
+body {
+  //background-color: #000;
+  opacity: 90%;
+  font-family: 'Anonymous Pro', monospace; 
+  position: relative;
+}
+Header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.description, .name {
+  font-size: 15px;
+  color: white;
+  padding: 10px 5px;
+} 
+.top-header {
+  background-color: black;
+  position: relative;
+  z-index:5;
+}
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+ .sticky + section#bioPage {
+  padding-top: 65px;
+} 
+
+#logo {
+  font-family: 'Greenscreen';
+  color: #41FF00;
+}
+
+
+@media screen and (min-width: 660px) {
+  .logo-pipe {
+  font-size:30px;
+  }
+  .logo {
+    font-size: 28px !important;
+  }
+  
+  .linkedin, .github, .email {
+    font-size: 25px;
+  }
+}
+.logo-initial {
+  color: #9493D5;
+}
+h1.title {
+  margin-left: 32px;
+  color: black;
+  font-size: 24px;
+}
+
+header {
+  display: flex;
+  flex-wrap: row;
+  color: white; 
+}
+.titles {
+  display: flex;
+  flex-wrap: row wrap;
+}
+.headerspecial {
+  text-align: center;
+  font-size: 1.5em;
+  line-height:-1px;
+  padding: 1em;
+  border: 1px solid #fff;
+  }
+  .headerspecial2 {
+    text-align: center;
+    font-size: 5em;
+    color: white; 
+  }
+  .headerspecial3 {
+    text-align: center;
+    font-size: 2em;
+    color: white;
+    padding: 1em;
+    border: 1px solid #fff; 
+  }
+
+nav {
+  display: flex;
+  position: absolute;
+  right: 1px;
+}
+#navLinks {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-end;
+  font-size: 20px;
+ 
+}
+
+ul#navlinks {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+ul#navlinks li {
+  list-style-type: none;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 20px;
+  height: 50px;
+  width: 145px;
+  text-align:center;
+  
+}
+
+#navLinks > li:nth-child(1) {
+background-color: #008000;
+}
+#navLinks > li:nth-child(2) {
+background-color:  #003300;
+}
+#navLinks > li:nth-child(3) {
+   background-color: #99ff99;
+  }
+#navLinks > li > a{
+color: orange;
+text-decoration: none;
+}
+#navLinks > li:hover{
+  color: white;
+  background-color: #3D3C99;
+  }
+
+.fullPage {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 20px;
+  width: 100%;
+  background-color: #000000;
+}
+
+.half-page {
+  width: 50%;
+}
+#bioPage { 
+   color: white;
+  display:flex;
+  justify-content: space-between;
+}
+#bioPage header {
+  margin: 0px 5px;
+  font-size: 30px;
+}
+#bioPage div {
+  color: white;
+  font-size:13px;
+  height:200px;width:66%;font:16px/26px;
+
+}
+
+
+
+#technologiesPage {
+/*background-color:  #3D3C99;*/
+background-color: #00b300;
+/* background-color: #009900;
+background-color: #008000;
+background-color: #006600;
+background-color: #004d00;
+background-color: #003300;
+background-color: #001a00; */
+color: #d1d1d1;
+  font-size:20px;
+  padding: 10px;
+
+}
+
+nav {
+  margin-right: 10px;
+}
+nav li {
+    list-style-type:none;
+    display: inline;
+}
+
+#tech {
+  ul {
+    display: flex;
+    max-width: 90%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 10px;
+  li {
+    list-style-type:none;
+   .techImage {
+    img {
+      display: flex;
+      flex-direction: row;
+      padding-right: 30px;
+      max-width: 15%;
+      height: auto;
+      margin: 2%;
+      padding: 10px;
+    }
+    }
+   }
+  }
+}
+
+#devjobs {
+  /*background-color:  #1F1E4D;*/
+  color: #d1d1d1;
+  padding: 10px;
+  margin: 10px 0px;
+
+  display: flex;
+  flex-wrap: row wrap;
+  
+}
+
+div#experience-logo img {
+  width: 150px;
+  height: auto;
+}
+
+#containerSurround {
+  display: flex;
+  flex-wrap: row wrap; 
+  font-size: 15px;
+}
+
+div#experience-logo {
+  border: 1px solid gold;
+  padding-top: 10px;
+}
+
+div#experience-description {
+  border: 1px solid gold;
+}
+
+#onin-description,#wku-description, #advance-description, #view360-description,
+#acxiom-description,#jackroe-description, #nss-description {
+  width: 100%;
+  background-color: rgb(0, 22, 40);
+  border: 1px solid orange;
+  color: white;
+  font-family: "Courier";
+}
+.projects {
+  background-color: #000000;
+  margin-top: -10px;
+}
+.project-buttons {
+  margin-top: 5px;
+}
+#projectsPage {
+  background-color: #000;
+  color: blue;
+  padding: 10px;
+  margin: 5px;
+ 
+}
+.project {
+  border: 2px solid orange;
+  width: 352px;
+  height: auto;
+  
+
+}
+
+.projectsContainer {
+  max-width: 80%;
+  /*display:flex;
+  flex-flow: row wrap;
+  justify-content: space-between;*/
+  margin: 2% auto;
+}
+
+.projectCard {
+  z-index: 2;
+  background-color: #383838;
+  color: #6c6d71;
+  text-align: center;
+  height: $projectsHeight !important;
+  width: 50%;
+  margin-bottom: 5%;
+  .title {
+    font-size: 35px;
+    text-align:center;
+  }
+}
+
+.projectDossierButtonContainer {
+  height: $projectsHeight !important;
+  z-index: 2;
+  display: flex;
+  align-items: top;
+  background-color:#1b1919;
+  margin-bottom: 5%;
+  border: 1px solid #fff;
+
+    .projectDossierButton {
+      writing-mode: vertical-rl;
+      position: relative;
+      inset-inline: 50px 20px;
+      line-height: 13px;
+      width: 60px;
+      justify-content: center;
+      display: flex;
+      align-items: center;
+      color: white;
+    }
+}
+
+.projectDossier {
+  height: $projectsHeight !important;
+  z-index: 0;
+  position: absolute;
+  left: 55;
+  top: 0;
+  background: linear-gradient(90deg,#017a9b,#018377);
+  border: 1px solid #fff;
+  color: #fff;
+  padding: 5%;
+  padding-top: 2%;
+  /*width: 27%;*/
+  width: 50%;
+  
+
+  .title {
+    font-size: 35px;
+    text-align:center;
+  }
+ 
+}
+
+.animate {
+  transition: all 1s ease;
+  
+}
+.animate.rt  { right: -100%;  }
+
+.animate.rt.move {
+  right: 100%; 
+  transform: translate(100%, 0);
+}
+
+.project-outside {
+  display: flex;
+  flex-wrap: row wrap;
+  padding-right: 10px;
+  position: relative;
+}
+
+.mobileLinks {
+  display: none;
+}
+
+@media screen and (max-width: 660px) {
+  .projectCard {
+    width: 95%;
+    height: 100% !important;
+  }
+  .projectDossierButtonContainer,
+.projectDossier,
+.projectDossierButton {
+  display: none;
+}
+
+.mobileLinks {
+  display: block;
+}
+}
+
+.technologiesUsed {
+  color: darkslategrey;
+  background: linear-gradient(90deg,#017a9b,#018377);
+  margin-top:-22px;
+  padding-bottom: 17em;
+}
+
+#projectAnchor {
+  margin-top: 12px;
+}
+.githubUrl {
+  padding-bottom: 5px;
+  border-bottom: 1px solid darkslategrey;
+}
+footer {
+  background: #1b1919;
+  color:white;
+  position: relative;
+  height:50px;
+  width: 100%;
+  display: flex;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 30px;
+  height: 5em;
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+  box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+ 
+}
+
+.page-footer {
+  padding-bottom: 10px;
+}
+footer .contact-info {
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  flex-flow: row wrap;
+}
+
+
+.linkedin, .github, .email {
+  font-size: 15px;
+  padding-left: 10px;
+  padding-right: 10px;
+  line-height: 52px;
+}
+
+
+
+img.project {
+  width: 98%;
+  height: auto;
+}
+
+#listings {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: row wrap;
+  height: 272px;
+}
+#nss, #view360, #jackroe, #advance, #onin, #acxiom, #wku {
+  
+  width: 88%;
+  margin: 1px;
+  padding: 2px;
+  border-radius: 8px;
+  background-color: rgb(0, 22, 40);
+  border: 1px solid orange;
+  color: white;
+  font-family: "Courier";
+}
+  
+#highlightArea {
+  width: 50%;
+}
+
+.infoArea {
+  padding: 4%;
+  margin-top: 5%;
+  height: 300px;
+  background-color: #94bcc4;
+  /* background-color: rgb(0, 22, 40); */
+  border: 1px solid orange;
+  color: #fff;
+  font-family: "Courier";
+}
+
+.subheading {
+  font-family: 'Courier New', Courier, monospace; 
+}
+
+.x-frame-inner video {
+  display: block !important;
+  position: absolute !important;
+  top: 0 !important;
+  left: 0 !important;
+  width: 100% !important;
+  height: 100% !important;
+  margin: 0 !important;
+  z-index: 0;
+  max-width:1024px;
+  height:auto;
+}
+
+.container {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.bottom-left {
+  position: absolute;
+  bottom: 8px;
+  left: 16px;
+}
+
+#video {
+    max-width:105%;
+}
+.bio {
+  background: linear-gradient(90deg,#017a9b,rgb(0, 22, 40));
+    color: white;
+    margin-top: 56px;
+    width: 100%;
+    font-size: 18px;
+    
+  }
+
+  .statement {
+    color: #ffffff;
+    margin: 10px;
+    padding: 10px 2%;
+    // background-color: #001B2E;
+    //background: linear-gradient(90deg,#017a9b,#018377);
+    width: 100%;
+    .personal, .professional {
+      padding: 10px;
+    }
+  }
+
+.family-img-container {
+  width: 500px;
+}
+
+.family-section {
+  margin: 0 auto;
+  min-width: 281px;
+  margin: 12px;
+  text-align: center;
+  img {
+    margin: 0 auto;
+  }
+
+}
+
+  @media screen and (min-width:660px) and (max-width:992px) {
+    .statement {
+      margin-top: 85px;
+    }
+  }
+  
+  @media screen and (min-width:993px) {
+    .statement {
+    margin: 56px 10px 10px 10px;
+    }
+    .name, .description {
+      font-size: 20px;
+    }
+  }
+  
+
+  .techImage img {
+    width: 55px;
+    height: auto;
+  }
+
+  .final-thought {
+    color: white;
+    background-color: #DEB887;
+    padding-top: 10px;
+    margin-top: 70px;
+    padding-left: 88px;
+  }
+
+.topline {
+  display: flex;
+  flex-direction: row;
+  
+}
+
+.top-header {
+  background-color: rgba(0,0,0,0.75);
+  border-bottom: 2px solid #19aaff;
+}
+
+.screenshot img {
+  max-width: 90%;
+}
+
+.hide {
+  display: none;
+  position: absolute;
+  left: 40px;
+  z-index: -2;
+}
+
+
+.personal > .headerspecial, .professional > .headerspecial {
+  margin-top: 0
+}
