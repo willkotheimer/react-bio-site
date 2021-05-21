@@ -4,7 +4,7 @@
 package-lock.json
 dist/
 .firebase/
-data/apiKeyes.json
+data/apiKeys.json
 
 
 # dependencies
