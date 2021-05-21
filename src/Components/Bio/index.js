@@ -3,32 +3,28 @@ import Wedding from '../../images/familyphotos/married.jpg';
 import Baby from '../../images/familyphotos/baby.jpg';
 import Sports from '../../images/familyphotos/sports.jpg';
 import ChristmasCard from '../../images/familyphotos/christmasCard.jpg';
+import ImageCard from '../Images';
 
 export default function Bio(props) {
+  const { bioData } = props;
+  const picArray = [[Wedding, 'Our Wedding', 'We were married in 2018'], [Sports, 'Max', 'Our baby was born in 2019'],
+    [Baby, 'Hobbies', 'Football Marvel and Code'], [ChristmasCard, 'Our First Christmas', 'Our first Christmas with our baby']];
   return (
-<section class="fullpage bio">
-    <div class="statement" id="bio">
-      <div class="family-section">
-        <div class="family-img-container"></div>
-        <img src={Wedding} width="200" alt={'wedding'} />
-        <img src={Baby} width="200" alt={'Baby'} />
-        <img src={Sports} width="200" alt={'Sports'} />
-        <img src={ChristmasCard} width="200" alt={'family on christmas card'} />
+<section className="fullpage bio">
+    <div className="statement" id="bio">
+    <h1 class="neon">Family</h1>
+      <div className="family-section">
+        {picArray.map((pic) => <ImageCard imageUrl={pic} />)}
       </div>
-      <div class="titles">
-        <div class="headerspecial3">Will Kotheimer</div>
-        <div class="headerspecial">
-          Web
-          Development <br />& QA
-          Engineering
-        </div>
+      <div>
+        <h3>My Social Media</h3>
+        github - linkedin - instagram via Rachel
       </div>
-      <div class="personal">
-        <h1>Personal</h1>
+      <div className="personal">
+      <h1 class="neon">About me</h1>
       </div>
-      <div class="professional">
-        <h1>Professional</h1>
-      </div>
+      {bioData[0].info[0].personal}
+      {bioData[0].info[1].professional}
       <div id="projectAnchor"></div>
     </div>
 </section>

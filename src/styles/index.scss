@@ -1,7 +1,8 @@
 @import "~bootstrap/scss/bootstrap";
 @import "~@fortawesome/fontawesome-free/css/all.min.css";
 @import url(https://fonts.googleapis.com/css?family=Anonymous+Pro);
-@import './variables';
+@import 'variables';
+@import './components/';
 @font-face {
   font-family: 'Greenscreen';
   src: url('../fonts/Greenscr.ttf')  format('truetype'), /* Safari, Android, iOS */
@@ -9,8 +10,7 @@
 
 
 body {
-  //background-color: #000;
-  opacity: 90%;
+  background-color: #000;
   font-family: 'Anonymous Pro', monospace; 
   position: relative;
 }
@@ -72,8 +72,11 @@ header {
   color: white; 
 }
 .titles {
+  min-width: 80%;
   display: flex;
-  flex-wrap: row wrap;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  margin: 0 auto;
 }
 .headerspecial {
   text-align: center;
@@ -84,10 +87,12 @@ header {
   }
   .headerspecial2 {
     text-align: center;
-    font-size: 5em;
     color: white; 
   }
   .headerspecial3 {
+    background: linear-gradient(
+      90deg
+      ,  #001628, #017a9b);
     text-align: center;
     font-size: 2em;
     color: white;
@@ -279,9 +284,9 @@ div#experience-description {
 
 .projectsContainer {
   max-width: 80%;
-  /*display:flex;
+  display:flex;
   flex-flow: row wrap;
-  justify-content: space-between;*/
+  justify-content: space-between;
   margin: 2% auto;
 }
 
@@ -347,7 +352,7 @@ div#experience-description {
   transition: all 1s ease;
   
 }
-.animate.rt  { right: -100%;  }
+.animate.rt  { right: 0%;  }
 
 .animate.rt.move {
   right: 100%; 
@@ -501,14 +506,6 @@ img.project {
 #video {
     max-width:105%;
 }
-.bio {
-  background: linear-gradient(90deg,#017a9b,rgb(0, 22, 40));
-    color: white;
-    margin-top: 56px;
-    width: 100%;
-    font-size: 18px;
-    
-  }
 
   .statement {
     color: #ffffff;
@@ -531,6 +528,11 @@ img.project {
   min-width: 281px;
   margin: 12px;
   text-align: center;
+  min-width: 80%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  margin: 0 auto;
   img {
     margin: 0 auto;
   }
@@ -538,9 +540,9 @@ img.project {
 }
 
   @media screen and (min-width:660px) and (max-width:992px) {
-    .statement {
+   /* .statement {
       margin-top: 85px;
-    }
+    }*/
   }
   
   @media screen and (min-width:993px) {
@@ -591,4 +593,26 @@ img.project {
 
 .personal > .headerspecial, .professional > .headerspecial {
   margin-top: 0
+}
+
+
+.grow { 
+  transition: all .2s ease-in-out; 
+}
+  
+.grow:hover { 
+transform: scale(1.03); 
+}
+
+.neon {
+  color: #fff;
+  text-shadow:
+    0 0 5px #fff,
+    0 0 10px #fff,
+    0 0 20px #fff,
+    0 0 40px #0ff,
+    0 0 80px #0ff,
+    0 0 90px #0ff,
+    0 0 100px #0ff,
+    0 0 150px #0ff;
 }
