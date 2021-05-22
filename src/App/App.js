@@ -1,12 +1,12 @@
 import React from 'react';
-import Button from '@material-ui/core/Button';
 import data from '../data/projectsData';
 import bioData from '../data/bioData';
 import techData from '../data/techData';
 import TechContainer from '../Components/TechContainer';
 import './App.scss';
 import Header from '../Components/Header';
-import Bio from '../Components/Bio';
+import Footer from '../Components/Footer';
+import Family from '../Components/FamilySection';
 import ProjectContainer from '../Components/ProjectContainer';
 
 class App extends React.Component {
@@ -53,19 +53,22 @@ class App extends React.Component {
     return (
       <div className="App">
         <Header/>
-        <Bio key={bioData.id} bioData={Object.values(bioData)} />
+        <div className="d-flex flex-row-wrap">
+        <Family key={bioData.id} bioData={Object.values(bioData)} />
+        </div>
         <div className="d-flex">
         {techData && <TechContainer techData={Object.values(techData)} />}
         </div>
-        <div className="d-flex">
+        <div className="d-flex justify-content-center">
         <button variant="outlined" color="primary" id="csharp" onClick={this.handleClick}>C#/.NET/SQL Server Backend</button>
         <button id="firebase" onClick={this.handleClick}>Firebase Backend</button>
         <button id="react" onClick={this.handleClick}>React</button>
         <button id="javascript" onClick={this.handleClick}>Vanilla Javascript</button>
         <button id="allTech" onClick={this.handleClick}>Select All</button>
         </div>
-        click on them and make them sort<br/>
+        <span className="invite">(click to filter by technology)</span><br/>
         {projects && <ProjectContainer projects={Object.values(projects)} /> }
+        <Footer key={bioData.id} bioData={Object.values(bioData)} />
       </div>
     );
   }

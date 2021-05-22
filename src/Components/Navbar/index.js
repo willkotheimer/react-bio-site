@@ -8,6 +8,7 @@ import {
 
 export default function Navigation(props) {
   const [isOpen, setIsOpen] = useState(false);
+  const [active, setActive] = useState([]);
   const toggle = () => setIsOpen(!isOpen);
   return (
         <div>
@@ -16,14 +17,14 @@ export default function Navigation(props) {
         <Collapse isOpen={isOpen} navbar>
                 <Nav className="mr-auto" navbar>
                      <ul className="navbar-nav mr-auto">
-                       <li className="nav-item active">
+                       <li className="nav-item">
                          <a className="nav-link" href="#bio">About</a>
                        </li>
                        <li className="nav-item">
                          <a className="nav-link" href="#projectAnchor">Projects</a>
                        </li>
                        <li className="nav-item">
-                         <a className="nav-link" href="#techUsed">Technologies</a>
+                         <a className="nav-link" href="#techAnchor">Technologies</a>
                        </li>
                      </ul>
                 </Nav>

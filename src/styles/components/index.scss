@@ -1,2 +1,55 @@
+@import './navbar';
 @import './bio';
 @import './tech';
+@import './hero';
+@import './projects';
+@import './family';
+@import './header';
+@import './footer';
+
+body {
+    background-color: #000;
+    font-family: 'Anonymous Pro', monospace; 
+    position: relative;
+}
+
+.statement {
+    border: 1px solid #fff;
+    color: #ffffff;
+    padding: 10px 2%;
+    width: 100%;
+    .personal, .professional {
+      padding: 10px;
+    }
+  }
+
+  .professional {
+      border: 1px solid white;
+      padding: 30px;
+      // border-radius: 10px;
+  }
+
+  .description {
+      color: white;
+  }
+
+  .neon {
+    color: #fff;
+    text-shadow:
+      0 0 5px #fff,
+      0 0 10px #fff,
+      0 0 20px #fff,
+      0 0 40px #0ff,
+      0 0 80px #0ff,
+      0 0 90px #0ff,
+      0 0 100px #0ff,
+      0 0 150px #0ff;
+  }
+
+  .grow { 
+    transition: all .2s ease-in-out; 
+  }
+    
+  .grow:hover { 
+  transform: scale(1.03); 
+  }

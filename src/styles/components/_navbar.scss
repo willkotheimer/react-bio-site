@@ -1,0 +1,110 @@
+
+
+@media screen and (min-width: 660px) {
+    .logo-pipe {
+    font-size:30px;
+    }
+    .logo {
+      font-size: 28px !important;
+    }
+    
+    .linkedin, .github, .email {
+      font-size: 25px;
+    }
+  }
+  .logo-initial {
+    color: #9493D5;
+  }
+  h1.title {
+    margin-left: 32px;
+    font-size: 24px;
+  }
+  
+  header {
+    display: flex;
+    flex-wrap: row;
+    color: white; 
+  }
+  .titles {
+    min-width: 80%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    margin: 0 auto;
+  }
+  .headerspecial {
+    text-align: center;
+    font-size: 1.5em;
+    line-height:-1px;
+    padding: 1em;
+    border: 1px solid #fff;
+    }
+    .headerspecial2 {
+      text-align: center;
+      color: white; 
+    }
+    .headerspecial3 {
+      background: linear-gradient(
+        90deg
+        ,  #001628, #017a9b);
+      text-align: center;
+      font-size: 2em;
+      color: white;
+      padding: 1em;
+      border: 1px solid #fff; 
+    }
+  
+  nav {
+    display: flex;
+    position: absolute;
+    right: 1px;
+  }
+
+  nav {
+    margin-right: 10px;
+  }
+  nav li {
+      list-style-type:none;
+      display: inline;
+}
+
+  #navLinks {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-end;
+    font-size: 20px;
+   
+  }
+  
+  ul#navlinks {
+    display: flex;
+    flex-flow: row wrap;
+  }
+  
+  ul#navlinks li {
+    list-style-type: none;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+    height: 50px;
+    width: 145px;
+    text-align:center;
+    
+  }
+  
+  #navLinks > li:nth-child(1) {
+  background-color: #008000;
+  }
+  #navLinks > li:nth-child(2) {
+  background-color:  #003300;
+  }
+  #navLinks > li:nth-child(3) {
+     background-color: #99ff99;
+    }
+  #navLinks > li > a{
+  color: orange;
+  text-decoration: none;
+  }
+  #navLinks > li:hover{
+    color: white;
+    background-color: #3D3C99;
+    }

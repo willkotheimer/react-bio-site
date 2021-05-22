@@ -2,11 +2,10 @@ import React, { useState } from 'react';
 import ImageCard from '../Images';
 
 export default function Tech({ tech }) {
-  console.warn('my tech', tech);
   return (
-<section className='tech'>
+<section id="tech" className='techCard'>
     <div className='title'>
-    <h1 class='neon'>{tech.name}</h1>
+    <h1>{tech.name}</h1>
       <div className='techimage'>
         <img src={tech.image} />
       </div>
