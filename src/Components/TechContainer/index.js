@@ -2,7 +2,6 @@ import React from 'react';
 import Tech from '../Tech';
 
 export default function TechContainer({ techData }) {
-  console.warn(techData[0]);
   return (
     <section id="techAnchor" className="tech">
     <h1 className="neon">My Technologies:</h1>

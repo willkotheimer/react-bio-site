@@ -7,11 +7,11 @@ export default function Bio(props) {
 <section className="footer d-flex row-wrap">
     <footer>
     <div className="statement d-flex justify-content-between" id="bio">
-    <h1 class="neon">Contact</h1>
+    <h1 className="neon">Contact</h1>
       <div className="hero">
         <img src={Me} />
         <div className="social">
-        <a href="http://github.com/willkotheimer"><i class="fab fa-github-square social"></i></a> | <a href="http://linkedin.com/willkotheimer"><i class="fab fa-linkedin social"></i></a> | <a href="mailto: wkotheimer@gmail.com"><i class="far fa-envelope social"></i></a>
+        <a href="http://github.com/willkotheimer"><i className="fab fa-github-square social"></i></a> | <a href="http://linkedin.com/willkotheimer"><i className="fab fa-linkedin social"></i></a> | <a href="mailto: wkotheimer@gmail.com"><i className="far fa-envelope social"></i></a>
       </div>
       </div>
     </div>

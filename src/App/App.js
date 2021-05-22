@@ -54,7 +54,7 @@ class App extends React.Component {
       <div className="App">
         <Header/>
         <div className="d-flex flex-row-wrap">
-        <Family key={bioData.id + 1} bioData={Object.values(bioData)} />
+        <Family key={bioData.id} bioData={Object.values(bioData)} />
         </div>
         <div className="d-flex">
         {techData && <TechContainer techData={Object.values(techData)} />}
