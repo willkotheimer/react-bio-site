@@ -12,12 +12,12 @@ export default function Family(props) {
   return (
 <section className="fullpage bio">
     <div id="bio">
-    <h1 className="neon">Life right now</h1>
+    <h1 className="font">Life right now</h1>
       <div className="family-section">
         {picArray.map((pic, index) => <ImageCard key={index} imageUrl={pic} />)}
       </div>
       <div className="personal">
-      <h1 className="neon">About me</h1>
+      <h1 className="font">About me</h1>
       </div>
       {bioData[0].info[0].personal}
     </div>

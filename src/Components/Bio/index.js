@@ -6,7 +6,7 @@ export default function Bio(props) {
   return (
 <section id="bio" className="fullpage bio">
     <div className="statement d-flex justify-content-between">
-    <h1 className="neon">About me</h1>
+    <h1 className="font">About me</h1>
       <div className="hero">
         <img src={Me} />
         <div>
