@@ -1,5 +1,49 @@
+#techAnchor {
+    padding-top: 50px;
+}
+
+#tech {
+    ul {
+      display: flex;
+      max-width: 90%;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      margin: 10px;
+    li {
+      list-style-type:none;
+     .techImage {
+      img {
+        display: flex;
+        flex-direction: row;
+        padding-right: 30px;
+        max-width: 15%;
+        height: auto;
+        margin: 2%;
+        padding: 10px;
+      }
+      }
+     }
+    }
+  }
+
+
+.techContainer {
+    margin: 10px;
+}
+
+.techCard {
+    width: 200px;
+    background-color: #2d2727;
+    margin: 10px;
+}
+
+div.techimage > img {
+    max-width: 100px;
+    height: auto;
+}
+
 .techdescription {
-    color: #3f51b5;
+    color: #8798f1;
     z-index: 1;
 }
 
@@ -9,4 +53,8 @@
 
 .subtitle {
     color: white;
+}
+
+.invite {
+    color: lightgreen;
 }

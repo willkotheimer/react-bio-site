@@ -1,0 +1,49 @@
+#projectAnchor {
+    padding-top: 50px;
+  }
+.githubUrl {
+  padding-bottom: 5px;
+  border-bottom: 1px solid darkslategrey;
+}
+
+.projects {
+    background-color: #000000;
+    margin-top: -10px;
+  }
+  .project-buttons {
+    margin-top: 5px;
+  }
+  #projectsPage {
+    background-color: #000;
+    color: blue;
+    padding: 10px;
+    margin: 5px;
+  }
+  .project {
+    border: 2px solid orange;
+    width: 352px;
+    height: auto;
+  }
+  
+  .projectsContainer {
+    max-width: 80%;
+    display:flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    margin: 2% auto;
+  }
+  
+  .projectCard {
+    z-index: 2;
+    background-color: #383838;
+    color: #6c6d71;
+    text-align: center;
+    height: $projectsHeight !important;
+    width: 50%;
+    margin-bottom: 5%;
+    .title {
+      font-size: 35px;
+      text-align:center;
+    }
+  }
+  

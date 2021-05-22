@@ -1,0 +1,35 @@
+
+footer {
+    background: #1b1919;
+    color:white;
+    position: relative;
+    width: 100%;
+    display: flex;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+}
+
+.page-footer {
+    padding-bottom: 10px;
+  }
+  footer .contact-info {
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    flex-flow: row wrap;
+    color: lightgreen;
+  }
+  
+.social {
+    color: lightgreen;
+}
+  
+.linkedin, .github, .email {
+  font-size: 15px;
+  padding-left: 10px;
+  padding-right: 10px;
+  line-height: 52px;
+}
