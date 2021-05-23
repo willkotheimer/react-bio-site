@@ -1,5 +1,6 @@
 #projectAnchor {
     padding-top: 50px;
+    margin-top: 10px;
   }
 .githubUrl {
   padding-bottom: 5px;
@@ -47,3 +48,12 @@
     }
   }
   
+  @media screen and (max-width: 660px) {
+    .projectCard {
+      width: 95%;
+      height: 100% !important;
+    }
+    .family-section {
+      display: block !important;
+    }
+  }

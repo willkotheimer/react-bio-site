@@ -15,8 +15,8 @@ export default function Bio(props) {
       </div>
       </div>
       <div className="personal">
-      </div>
       {bioData[0].info[1].professional}
+      </div>
     </div>
 </section>
   );

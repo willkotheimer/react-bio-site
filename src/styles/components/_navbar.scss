@@ -13,7 +13,7 @@
     }
   }
   .logo-initial {
-    color: #9493D5;
+    color: #fff
   }
   h1.title {
     margin-left: 32px;
@@ -107,4 +107,10 @@
   #navLinks > li:hover{
     color: white;
     background-color: #3D3C99;
+    }
+
+    @media screen and (max-width: 660px) {
+      li > a:hover ::before {
+          content: ">"
+      }
     }
