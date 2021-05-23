@@ -7,4 +7,25 @@
 
 #bio {
     padding-top: 50px;
+    border-bottom: 1px solid#8798f1;
 }
+
+.personal {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.family-section {
+    max-width: 80%;
+}
+
+.personal {
+    width:70%;
+    margin-bottom: 20px;
+}
+
+@media screen and (max-width: 660px) {
+   .bio {
+       margin-top: 10px;
+   }
+  }

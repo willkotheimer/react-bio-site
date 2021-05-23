@@ -12,3 +12,9 @@
       margin: 0 auto;
     }
   }
+
+  @media screen and (max-width: 660px) {
+  .MuiPaper-root.MuiCard-root.makeStyles-root-1.grow.MuiPaper-elevation1.MuiPaper-rounded {
+    margin-bottom: 10px !important;
+    }
+}

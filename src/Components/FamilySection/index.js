@@ -18,8 +18,8 @@ export default function Family(props) {
       </div>
       <div className="personal">
       <h1 className="font">About me</h1>
-      </div>
       {bioData[0].info[0].personal}
+      </div>
     </div>
 </section>
   );

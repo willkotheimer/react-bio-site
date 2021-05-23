@@ -10,6 +10,7 @@ footer {
     -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
     -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
     box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    margin-top: -22px;
 }
 
 .page-footer {
@@ -32,4 +33,10 @@ footer {
   padding-left: 10px;
   padding-right: 10px;
   line-height: 52px;
+}
+
+@media screen and (max-width: 660px) {
+  footer {
+    display: block !important;
+  }
 }
