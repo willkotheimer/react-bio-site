@@ -59,12 +59,12 @@ class App extends React.Component {
         <div className="d-flex">
         {techData && <TechContainer techData={Object.values(techData)} />}
         </div>
-        <div className="d-flex justify-content-center">
-        <button variant="outlined" color="primary" id="csharp" onClick={this.handleClick}>C#/.NET/SQL Server Backend</button>
-        <button id="firebase" onClick={this.handleClick}>Firebase Backend</button>
-        <button id="react" onClick={this.handleClick}>React</button>
-        <button id="javascript" onClick={this.handleClick}>Vanilla Javascript</button>
-        <button id="allTech" onClick={this.handleClick}>Select All</button>
+        <div className="d-flex justify-content-center flex-wrap space">
+        <button className="techButton" variant="outlined" color="primary" id="csharp" onClick={this.handleClick}>C#/.NET/SQL Server Backend</button>
+        <button className="techButton" id="firebase" onClick={this.handleClick}>Firebase Backend</button>
+        <button className="techButton" id="react" onClick={this.handleClick}>React</button>
+        <button className="techButton" id="javascript" onClick={this.handleClick}>Vanilla Javascript</button>
+        <button className="techButton" id="allTech" onClick={this.handleClick}>Select All</button>
         </div>
         <span className="invite">(click to filter by technology)</span><br/>
         {projects && <ProjectContainer projects={Object.values(projects)} /> }
