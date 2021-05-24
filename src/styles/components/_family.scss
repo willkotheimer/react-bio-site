@@ -6,13 +6,16 @@
     min-width: 80%;
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-between;
+    justify-content: center;
     margin: 0 auto;
     img {
       margin: 0 auto;
     }
   }
 
+  .spacer {
+    margin: 10px;
+  }
   @media screen and (max-width: 660px) {
   .MuiPaper-root.MuiCard-root.makeStyles-root-1.grow.MuiPaper-elevation1.MuiPaper-rounded {
     margin-bottom: 10px !important;
