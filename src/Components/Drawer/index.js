@@ -2,13 +2,9 @@ import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import List from "@material-ui/core/List";
 import ListItem from "@material-ui/core/ListItem";
-import ListItemIcon from "@material-ui/core/ListItemIcon";
 import ListItemText from "@material-ui/core/ListItemText";
-import Divider from "@material-ui/core/Divider";
 import Slide from "@material-ui/core/Slide";
-import Button from "@material-ui/core/Button";
-import InboxIcon from "@material-ui/icons/Inbox";
-import DraftsIcon from "@material-ui/icons/Drafts";
+
 
 const useStyles = makeStyles(theme => ({
   root: {
@@ -29,10 +25,6 @@ export default function MakeshiftDrawer({ open }) {
 
   return (
     <div className="display: flex; flex-wrap: row">
-    <div>
-    bkjfhkjsdfhkshfkjshafksjahfkadsjfhksjdfhjsakdf
-    kfdsafkhdsgafadsjfgasgfdasgfasgfjdsakgfdsf
-    </div>
     <Slide direction="right" in={open} mountOnEnter unmountOnExit>
       <div className={classes.root}>
         <List component="nav" aria-label="main mailbox folders">

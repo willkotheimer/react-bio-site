@@ -20,7 +20,7 @@ const useStyles = makeStyles({
 export default function ImageCard({ imageUrl }) {
   const classes = useStyles();
   return (
-    <Card className={`${classes.root} grow`}>
+    <Card className={`${classes.root} grow spacer`}>
       <CardActionArea>
         <CardMedia
           className={classes.media}

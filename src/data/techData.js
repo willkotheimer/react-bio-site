@@ -4,6 +4,6 @@ const techData = {
   tech3: { name: 'Entity Framework', image: 'https://github.com/willkotheimer/react-bio-site/blob/main/src/images/logos/entity-framework.png?raw=true', description: 'Entity Framework is one kind of database interaction called an ORM. At NSS, we concentrated on 3: Entity Framework, Dapper, and ADO.Net.' },
   tech4: { name: 'Firebase', image: 'https://github.com/willkotheimer/react-bio-site/blob/main/src/images/logos/firebase.png?raw=true', description: 'Firebase is a scafolding for database/apis, as well as a means for gmail authentication. At NSS, we used this mainly in the front end section.' },
   tech5: { name: 'Javascript', image: 'https://github.com/willkotheimer/react-bio-site/blob/main/src/images/logos/node-js.webp?raw=true', description: 'Javascript ES6 the front end language for the web. We focused on modular programming, functional programming (map, reduce, find) and calling apis with promises and async/await.' },
-  tech6: { name: 'React', image: 'https://github.com/willkotheimer/react-bio-site/blob/main/src/images/techlogos/react.png?raw=true', description: 'React things' },
+  tech6: { name: 'React', image: 'https://github.com/willkotheimer/react-bio-site/blob/main/src/images/techlogos/react.png?raw=true', description: 'React is a javascript framework for building single page applications. Our cohort focused on creating apps with classes and react router, but I also taught myself hooks, material ui, and react rebase.' },
 };
 export default { techData };
