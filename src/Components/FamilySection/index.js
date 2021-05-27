@@ -4,7 +4,7 @@ import Baby from '../../images/familyphotos/baby.jpg';
 import Sports from '../../images/familyphotos/sports.jpg';
 import ChristmasCard from '../../images/familyphotos/christmasCard.jpg';
 import WeddingWebsite from '../../images/familyphotos/WillAndRachelsWedding.PNG';
-import TenLessons from '../../images/familyphotos/tenLessons.PNG';
+import TenLessons from '../../images/familyphotos/PhilosophiesProgramming.PNG';
 import TenSteps from '../../images/familyphotos/tenSteps.PNG';
 import CodeLessons from '../../images/familyphotos/lessonsInCode.jpg';
 import Me from '../../images/me.jpg';
