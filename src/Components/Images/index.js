@@ -85,6 +85,7 @@ export default function ImageCard({ imageUrl }) {
               )
               .join('\n') }
             </Typography>
+            {(imageUrl[5] && imageUrl[6]) && <a href={imageUrl[6]} >{imageUrl[5]}</a>}
               <img src={imageUrl[4]} className={`${classes.modalImage}`} />
           </DialogContentText>
         </DialogContent>

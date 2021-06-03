@@ -1,8 +1,10 @@
 
-
+.pipe {
+  font-size: 12px;
+}
 @media screen and (min-width: 660px) {
     .logo-pipe {
-    font-size:30px;
+    font-size:20px;
     }
     .logo {
       font-size: 28px !important;
@@ -58,11 +60,9 @@
     display: flex;
     position: absolute;
     right: 1px;
-  }
-
-  nav {
     margin-right: 10px;
   }
+  
   nav li {
       list-style-type:none;
       display: inline;
