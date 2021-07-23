@@ -6,13 +6,12 @@ export default function MyHeader(props) {
   return (
       <header className="sticky top-header">
         <div className="topline">
-          <div id="logo">>qa
-            +d|
+          <div id="logo">>r
+            +dn|
             <span className="logo-initial">WK</span>
           </div>
           <h1 className="title"><span className="name">Will Kotheimer</span><span className="pipe">|</span><span className="description">Web
-              Development & QA
-              Engineering</span></h1>
+              React & .NET </span></h1>
         </div>
         <Navigation/>
         <PageProgress color={'#19aaff'} height={5} />
