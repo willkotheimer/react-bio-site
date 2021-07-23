@@ -14,7 +14,7 @@ export default function TitleBar() {
         'APIs',
         'Animations',
         'Selenium',
-        '>qa+d | WK   Will Kotheimer | Web Development & QA Engineering',
+        '>qa+d | WK   Will Kotheimer | React and .NET Developer',
       ]}
     />
     </div>
